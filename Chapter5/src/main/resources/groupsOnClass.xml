@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suiteName">
+    <test name="runAll">
+        <classes>
+            <class name="com.sihan.testng.groups.GroupsOnCLASS1"/>
+            <class name="com.sihan.testng.groups.GroupsOnCLASS2"/>
+            <class name="com.sihan.testng.groups.GroupsOnCLASS3"/>
+        </classes>
+    </test>
+    <test name="onlyRunStu">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sihan.testng.groups.GroupsOnCLASS1"/>
+            <class name="com.sihan.testng.groups.GroupsOnCLASS2"/>
+            <class name="com.sihan.testng.groups.GroupsOnCLASS3"/>
+        </classes>
+    </test>
+</suite>
