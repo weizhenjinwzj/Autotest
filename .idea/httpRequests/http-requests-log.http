@@ -1,0 +1,296 @@
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithcookies?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-09-21T114259.200.txt
+
+###
+
+GET http://localhost:8087/getwithparam?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-09-21T114116.200.txt
+
+###
+
+GET http://localhost:8087/getwithparam?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-09-21T114047.200.txt
+
+###
+
+GET http://localhost:8087/postwithparam?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/postwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/postwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8087/postwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8087/getwithparam?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-09-21T113910.200.txt
+
+###
+
+GET http://localhost:8087/getwithparam?name=hu&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan1&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan1&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan1&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan1&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan1&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8087/postwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-09-21T113657.200.txt
+
+###
+
+POST http://localhost:8087/postwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8087/getwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8087/getwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+GET http://localhost:8087/getwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+###
+
+POST http://localhost:8087/postwithparam?name=huhansan&age=18
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2018-09-21T113245.200.txt
+
+###
+
