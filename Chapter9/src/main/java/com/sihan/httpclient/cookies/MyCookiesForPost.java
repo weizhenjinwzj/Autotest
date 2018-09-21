@@ -3,9 +3,13 @@ package com.sihan.httpclient.cookies;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.CookieStore;
 import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
 import org.apache.http.cookie.Cookie;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
+import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -14,7 +18,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
-public class MyCookiesForGet
+public class MyCookiesForPost
 {
     private String url;
     private ResourceBundle bundle;//测试之前读取配置信息
@@ -53,29 +57,41 @@ public class MyCookiesForGet
 
     }
     @Test(dependsOnMethods ={"testGetCookies"} )
-    public void testGetWithCookie() throws IOException {
-        String uri=bundle.getString("test.getwithcookies");
-        String testurl=this.url+uri;//字符串拼接时注意顺序
+    public void testPostMethod() throws IOException {
+        String uri=bundle.getString("test.postwithcookie");
+        String testUrl=this.url+uri;//拼接测试地址
 
-        HttpGet httpGet=new HttpGet(testurl);
+        //声明一个Client对象，用来进行方法的执行
         DefaultHttpClient httpClient=new DefaultHttpClient();
-
-        //设置cookie信息
+        //声明一个请求方法。这个方法为post
+        HttpPost httpPost=new HttpPost(testUrl);
+        //添加请求参数
+        JSONObject json=new JSONObject();
+        json.put("name","wzj");
+        json.put("age","18");
+        //设置请求头信息
+        httpPost.setHeader("content-type","application/json");
+        //将参数信息添加到方法中
+        StringEntity entity=new StringEntity(json.toString(),"utf-8");
+        httpPost.setEntity(entity);
+        //声明一个对象进行相应结果的存储
+        String result;
+        //设置coolie信息
         httpClient.setCookieStore(this.cookieStore);
-
-        HttpResponse httpResponse= httpClient.execute(httpGet);
-
-       // 获取响应的状态码
-        int statusCode=httpResponse.getStatusLine().getStatusCode();
-
-        System.out.println("statuscode="+statusCode);
-
-        if (statusCode==200)
-        {
-            String result=EntityUtils.toString(httpResponse.getEntity(),"UTF-8");
-            System.out.println(result);
-        }
-
-
+        //执行post请求方法
+        HttpResponse httpResponse=httpClient.execute(httpPost);
+        //获取响应结果
+         result=EntityUtils.toString(httpResponse.getEntity(),"UTF-8");
+         System.out.println(result);
+        //判断响应结果是否与预期结果一致
+        //将返回的响应结果字符转换为json对象
+        JSONObject resuitJson=new JSONObject(result);
+        //获取结果值
+        String sucess= (String) resuitJson.get("wzj");
+        String status=(String) resuitJson.get("status");
+        //具体判断返回结果的值
+        Assert.assertEquals("success",sucess);
+        Assert.assertEquals("1",status);
     }
+
 }
