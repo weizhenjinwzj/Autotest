@@ -28,7 +28,7 @@
     },
     "response":
     {
-      "text":"这是一个需要带cookie信息的get请求"
+      "text":"这是一个需要带cookie信息才能访问的get请求"
     }
   }
   ,
