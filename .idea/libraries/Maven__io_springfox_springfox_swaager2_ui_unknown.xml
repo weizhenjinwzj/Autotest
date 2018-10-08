@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.springfox:springfox-swaager2-ui:unknown">
+    <CLASSES>
+      <root url="jar://D:/apache-maven-3.5.4/io/springfox/springfox-swaager2-ui/unknown/springfox-swaager2-ui-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/apache-maven-3.5.4/io/springfox/springfox-swaager2-ui/unknown/springfox-swaager2-ui-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/apache-maven-3.5.4/io/springfox/springfox-swaager2-ui/unknown/springfox-swaager2-ui-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

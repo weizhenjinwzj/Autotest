@@ -3,7 +3,7 @@ package com.sihan.model;
 import lombok.Data;
 
 @Data
-public class GetUsetList
+public class GetUserListCase
 {
     private String username;
     private String age;
